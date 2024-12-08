@@ -28,7 +28,7 @@ class FormMainMenu(Form):
             self.main_menu_subtitle, self.main_menu_title, self.button_exit, self.button_ranking, self.button_start
         ]
 
-    def click_start(self, form_a_inicializar): #No me interesa usar el 2do parámetro
+    def click_start(self, form_a_inicializar):
         #self.start_level = True
         self.set_active(form_a_inicializar)
 

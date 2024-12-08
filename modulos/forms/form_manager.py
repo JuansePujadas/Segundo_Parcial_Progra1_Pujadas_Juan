@@ -18,7 +18,7 @@ class FormManager:
             FormMainMenu(name='form_main_menu', pantalla=pantalla, x=0, y=0, active=True, level_num=1, music_path=RUTA_MUSICA_LOBBY), 
             FormRanking(name='form_ranking', pantalla=pantalla, x=0, y=0, active=True, level_num=1, music_path=RUTA_MUSICA_LOBBY, ranking_list=self.ranking),
             FormGame(name='form_game', pantalla=pantalla, x=0, y=0, active=True, level_num=1, music_path=RUTA_MUSICA_PARTIDA, logic=self.logic),
-            FormEnterName(name='form_enter_name', pantalla=pantalla, x=0, y=0, active=True, level_num=1, music_path=RUTA_SONIDO_LOSER, score=0)
+            FormEnterName(name='form_enter_name', pantalla=pantalla, x=0, y=0, active=True, level_num=1, music_path=RUTA_MUSICA_LOBBY, score=0)
         ]
     
     def form_update(self, event_list):

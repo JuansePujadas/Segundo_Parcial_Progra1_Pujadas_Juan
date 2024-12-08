@@ -37,14 +37,22 @@ class FormGame(Form):
         if self.logic.pregunta_actual:
             respuesta_correcta = (opcion == 'rojo' and self.logic.pregunta_actual['respuesta_rojo'] == self.logic.realizar_votaciones())
             self.actualizar_puntaje(respuesta_correcta)
-            self.actualizar_pregunta()
+            
+            if respuesta_correcta:
+                self.actualizar_pregunta()
+            else:
+                self.logic.finalizar_partida(self.score)
 
     def responder_azul(self, opcion):
         if self.logic.pregunta_actual:
             respuesta_correcta = (opcion == 'azul' and self.logic.pregunta_actual['respuesta_azul'] == self.logic.realizar_votaciones())
             self.actualizar_puntaje(respuesta_correcta)
-            self.actualizar_pregunta()
-
+            
+            if respuesta_correcta:
+                self.actualizar_pregunta()
+            else:
+                self.logic.finalizar_partida(self.score)
+                
     def actualizar_pregunta(self):
         self.logic.seleccionar_pregunta()
         self.game_title_pregunta.texto = self.logic.pregunta_actual['pregunta']

@@ -1,17 +1,77 @@
 {
     "1": {
-        "pregunta": "¿Que modulo de Python se utiliza para desarrollar videojuegos?",
+        "pregunta": "¿Qué módulo de Python se utiliza para desarrollar videojuegos?",
         "respuesta_rojo": "Pygame",
         "respuesta_azul": "Arcade"
     },
     "2": {
-        "pregunta": "¿Cual es una estructura de datos comun en Python?",
+        "pregunta": "¿Cuál es una estructura de datos común en Python?",
         "respuesta_rojo": "Lista",
         "respuesta_azul": "Diccionario"
     },
     "3": {
-        "pregunta": "¿Que metodo de Pygame se usa para actualizar la pantalla?",
+        "pregunta": "¿Qué método de Pygame se usa para actualizar la pantalla?",
         "respuesta_rojo": "pygame.display.update()",
         "respuesta_azul": "pygame.display.flip()"
+    },
+    "4": {
+        "pregunta": "¿Qué palabra clave se utiliza para definir una función en Python?",
+        "respuesta_rojo": "def",
+        "respuesta_azul": "lambda"
+    },
+    "5": {
+        "pregunta": "¿Qué valor puede tener una variable que no ha sido inicializada?",
+        "respuesta_rojo": "None",
+        "respuesta_azul": "Null"
+    },
+    "6": {
+        "pregunta": "¿Qué operador se utiliza para cálculos matemáticos en Python?",
+        "respuesta_rojo": "+",
+        "respuesta_azul": "*"
+    },
+    "7": {
+        "pregunta": "¿Qué tipo de dato es inmutable en Python?",
+        "respuesta_rojo": "Tupla",
+        "respuesta_azul": "Cadena"
+    },
+    "8": {
+        "pregunta": "¿Qué declaración se usa para manejar errores?",
+        "respuesta_rojo": "try-except",
+        "respuesta_azul": "finally"
+    },
+    "9": {
+        "pregunta": "¿Qué método se usa para agregar un elemento a una lista?",
+        "respuesta_rojo": "append()",
+        "respuesta_azul": "extend()"
+    },
+    "10": {
+        "pregunta": "¿Qué función devuelve el número de elementos en una lista?",
+        "respuesta_rojo": "len()",
+        "respuesta_azul": "size()"
+    },
+    "11": {
+        "pregunta": "¿Qué operador lógico se usa para comparar igualdad?",
+        "respuesta_rojo": "==",
+        "respuesta_azul": "is"
+    },
+    "12": {
+        "pregunta": "¿Qué ciclo se usa para iterar sobre los elementos de una lista?",
+        "respuesta_rojo": "for",
+        "respuesta_azul": "while"
+    },
+    "13": {
+        "pregunta": "¿Qué estructura se usa para almacenar pares clave-valor en Python?",
+        "respuesta_rojo": "Diccionario",
+        "respuesta_azul": "JSON"
+    },
+    "14": {
+        "pregunta": "¿Qué error se genera si intentas dividir por cero?",
+        "respuesta_rojo": "ZeroDivisionError",
+        "respuesta_azul": "ArithmeticError"
+    },
+    "15": {
+        "pregunta": "¿Cómo defines una variable global dentro de una función?",
+        "respuesta_rojo": "global",
+        "respuesta_azul": "extern"
     }
 }
