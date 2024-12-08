@@ -1,0 +1,17 @@
+{
+    "1": {
+        "pregunta": "¿Que modulo de Python se utiliza para desarrollar videojuegos?",
+        "respuesta_rojo": "Pygame",
+        "respuesta_azul": "Arcade"
+    },
+    "2": {
+        "pregunta": "¿Cual es una estructura de datos comun en Python?",
+        "respuesta_rojo": "Lista",
+        "respuesta_azul": "Diccionario"
+    },
+    "3": {
+        "pregunta": "¿Que metodo de Pygame se usa para actualizar la pantalla?",
+        "respuesta_rojo": "pygame.display.update()",
+        "respuesta_azul": "pygame.display.flip()"
+    }
+}
