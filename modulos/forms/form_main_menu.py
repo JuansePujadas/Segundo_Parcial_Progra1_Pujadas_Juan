@@ -1,13 +1,11 @@
 import pygame
 from .form import Form
 from ..widgets import (Button, TextTitle)
-from ..variables import (DIMENSION_PANTALLA, RUTA_FONDO_MAIN_MENU)
+from ..variables import (DIMENSION_PANTALLA, RUTA_FONDO_MAIN_MENU, RUTA_MUSICA_LOBBY)
 
 class FormMainMenu(Form):
     def __init__(self, name, pantalla, x, y, active, level_num, music_path):
         super().__init__(name, pantalla, x, y, active, level_num, music_path)
-
-        #self.start_level = False
 
         self.music_update()
         

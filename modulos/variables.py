@@ -4,7 +4,7 @@ DIMENSION_PANTALLA = (800, 600)
 RUTA_FONDO_MAIN_MENU = 'assets/img/curtains.png'
 RUTA_FONDO_ENTER_NAME = 'assets/img/enter_name.webp'
 RUTA_FONDO_RANKING = 'assets/img/leaderboard.jpg'
-RUTA_FONDO_PARTIDA = 'assets/img/stage.jpg'
+RUTA_FONDO_PARTIDA = 'assets/img/stage.png'
 
 RUTA_PARTICIPANTE = 'assets/img/participante.png'
 
@@ -22,7 +22,7 @@ RUTA_SONIDO_WINNER = 'assets/snd/winner.mp3'
 RUTA_SONIDO_LOSER = 'assets/snd/loser.mp3'
 
 #Fuente
-RUTA_FUENTE = 'assets/fonts/Merriweather-Bold.ttf'
+RUTA_FUENTE = 'assets/fonts/Vogue.ttf'
 
 #Colores
 COLOR_AZUL = (0,0,255)

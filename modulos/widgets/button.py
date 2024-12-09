@@ -1,13 +1,14 @@
 from .widget import Widget
 import pygame
-from ..variables import (COLOR_ANARANJADO, RUTA_FUENTE, RUTA_SONIDO_BOTONES)
+from ..variables import (COLOR_ANARANJADO, RUTA_FUENTE, RUTA_SONIDO_BOTONES, COLOR_AZUL, COLOR_ROJO)
 
 class Button(Widget):
 
-    def __init__(self, x, y, texto, pantalla, font_size=25, on_click=None, on_click_param=None, cooldown_time=300):
+    def __init__(self, x, y, texto, pantalla, font_size=25, on_click=None, on_click_param=None, cooldown_time=300, color=COLOR_ANARANJADO):
         super().__init__(x, y, texto, pantalla, font_size)
         self.font = pygame.font.Font(RUTA_FUENTE, self.font_size)
-        self.image = self.font.render(self.texto, False, COLOR_ANARANJADO)
+        self.color = color
+        self.image = self.font.render(self.texto, False, color)
         self.rect = self.image.get_rect()
         self.rect.center = (x, y)
 
@@ -31,7 +32,7 @@ class Button(Widget):
                 self.click_option_sfx.play()
 
     def update(self):
-        self.image = self.font.render(self.texto, False, COLOR_ANARANJADO)
+        self.image = self.font.render(self.texto, False, self.color)
         self.rect = self.image.get_rect()
         self.rect.center = (self.x, self.y)
 

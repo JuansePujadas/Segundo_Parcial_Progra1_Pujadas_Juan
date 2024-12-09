@@ -12,9 +12,8 @@ class TextTitle(Widget):
         self.rect.center = (x, y)
 
     def update(self):
-        # Regenerar la superficie del texto cuando el texto cambia
         self.image = self.font.render(self.texto, True, COLOR_ANARANJADO)
         self.rect = self.image.get_rect()
         self.rect.center = (self.x, self.y)
 
-        self.draw()  # Llamamos a draw() después de actualizar
+        self.draw()

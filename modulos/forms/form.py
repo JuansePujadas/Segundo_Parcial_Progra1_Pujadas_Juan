@@ -14,15 +14,12 @@ class Form:
         self.music_path = music_path
         self.admin_snd = Sonido()
 
-        # if self.active:
-        #     self.music_update()
-
     def set_active(self, name: str):
         for aux_form in self.forms_dict.values():
             aux_form.active = False
         self.forms_dict[name].active = True
-        if name == 'form_game' or name == 'form_enter_name':
-            self.forms_dict[name].music_update()        
+        if name in ['form_game', 'form_enter_name', 'form_main_menu']:
+            self.forms_dict[name].music_update() 
 
     def music_update(self):
         self.admin_snd.detener_musica()

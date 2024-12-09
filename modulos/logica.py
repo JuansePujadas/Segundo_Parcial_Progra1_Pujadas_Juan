@@ -23,19 +23,15 @@ class Logic():
         self.votaciones_realizadas = votos                                  # Almacenar las votaciones
         respuesta_correcta = max(set(votos), key=votos.count)               # Devuelve la mayoría
         return respuesta_correcta 
-    
-    def obtener_votaciones_half(self):
-        half_votos = random.sample(self.votaciones_realizadas, 2)           # Seleccionamos 2 muestras de los 5 votos
         
-        return half_votos
-    
     def finalizar_partida(self, puntaje):
         if self.verificar_ingreso_ranking(puntaje):
             enter_name_form = Form.forms_dict['form_enter_name']
             enter_name_form.score = puntaje
             enter_name_form.set_active('form_enter_name')
         else:
-            Form.forms_dict['form_main_menu'].set_active('form_main_menu')
+            main_menu_form = Form.forms_dict['form_main_menu']
+            main_menu_form.set_active('form_main_menu')
 
     def verificar_ingreso_ranking(self, puntaje):
         with open('assets/ranking.csv', 'r') as archivo:

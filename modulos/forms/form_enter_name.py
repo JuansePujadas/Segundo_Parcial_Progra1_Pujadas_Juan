@@ -15,7 +15,6 @@ class FormEnterName(Form):
         self.slave_rect.y = y
         self.score = score
 
-        self.music_update()
         self.confirm_name = False
 
         self.enter_name_title = TextTitle(x=DIMENSION_PANTALLA[0]//2, y=DIMENSION_PANTALLA[1]//2-265, texto='GAME OVER', pantalla=pantalla, font_size=75)
