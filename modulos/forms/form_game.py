@@ -21,11 +21,11 @@ class FormGame(Form):
         self.game_title_puntaje = TextTitle(x=DIMENSION_PANTALLA[0]//2-350, y=DIMENSION_PANTALLA[1]//2+275, texto=f'{self.score}', pantalla=pantalla, font_size=35)
         self.game_boton_rojo = Button(x=DIMENSION_PANTALLA[0]//2, y=DIMENSION_PANTALLA[1]//2-50, texto='RESP 1', pantalla=pantalla, font_size=35, on_click=self.responder_rojo, on_click_param='rojo', color=COLOR_ROJO)
         self.game_boton_azul = Button(x=DIMENSION_PANTALLA[0]//2, y=DIMENSION_PANTALLA[1]//2-100, texto='RESP 2', pantalla=pantalla, font_size=35, on_click=self.responder_azul, on_click_param='azul', color=COLOR_AZUL)
-        self.game_rect_votante1 = RectRojoAzul(x=DIMENSION_PANTALLA[0]//2-8, y=DIMENSION_PANTALLA[1]//2+75, pantalla=pantalla)
+        self.game_rect_votante1 = RectRojoAzul(x=DIMENSION_PANTALLA[0]//2-10, y=DIMENSION_PANTALLA[1]//2+70, pantalla=pantalla)
         self.game_rect_votante2 = RectRojoAzul(x=DIMENSION_PANTALLA[0]//2+110, y=DIMENSION_PANTALLA[1]//2+75, pantalla=pantalla)
-        self.game_rect_votante3 = RectRojoAzul(x=DIMENSION_PANTALLA[0]//2+225, y=DIMENSION_PANTALLA[1]//2+75, pantalla=pantalla)
-        self.game_rect_votante4 = RectRojoAzul(x=DIMENSION_PANTALLA[0]//2-125, y=DIMENSION_PANTALLA[1]//2+75, pantalla=pantalla)
-        self.game_rect_votante5 = RectRojoAzul(x=DIMENSION_PANTALLA[0]//2-228, y=DIMENSION_PANTALLA[1]//2+75, pantalla=pantalla)
+        self.game_rect_votante3 = RectRojoAzul(x=DIMENSION_PANTALLA[0]//2+225, y=DIMENSION_PANTALLA[1]//2+70, pantalla=pantalla)
+        self.game_rect_votante4 = RectRojoAzul(x=DIMENSION_PANTALLA[0]//2-130, y=DIMENSION_PANTALLA[1]//2+75, pantalla=pantalla)
+        self.game_rect_votante5 = RectRojoAzul(x=DIMENSION_PANTALLA[0]//2-250, y=DIMENSION_PANTALLA[1]//2+70, pantalla=pantalla)
 
 
         self.widget_list = [self.game_title_pregunta, self.game_title_puntaje, self.game_boton_rojo, self.game_boton_azul, self.game_rect_votante1, self.game_rect_votante2, self.game_rect_votante3, self.game_rect_votante4, self.game_rect_votante5]
