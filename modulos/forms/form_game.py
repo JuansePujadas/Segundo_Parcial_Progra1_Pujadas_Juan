@@ -16,7 +16,6 @@ class FormGame(Form):
         self.slave_rect.x = x
         self.slave_rect.y = y
         self.score = 0
-        #self.game_over = False
 
         self.game_title_pregunta = TextTitle(x=DIMENSION_PANTALLA[0]//2, y=DIMENSION_PANTALLA[1]//2-200, texto='PREGUNTA', pantalla=pantalla, font_size=22)
         self.game_title_puntaje = TextTitle(x=DIMENSION_PANTALLA[0]//2-350, y=DIMENSION_PANTALLA[1]//2+275, texto=f'{self.score}', pantalla=pantalla, font_size=35)

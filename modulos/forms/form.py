@@ -18,8 +18,13 @@ class Form:
         for aux_form in self.forms_dict.values():
             aux_form.active = False
         self.forms_dict[name].active = True
+        
         if name in ['form_game', 'form_enter_name', 'form_main_menu']:
-            self.forms_dict[name].music_update() 
+            self.forms_dict[name].music_update()
+        
+        if name == 'form_game':
+            self.forms_dict[name].reiniciar_puntaje()
+
 
     def music_update(self):
         self.admin_snd.detener_musica()
