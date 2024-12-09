@@ -73,5 +73,80 @@
         "pregunta": "Como defines una variable global dentro de una funcion?",
         "respuesta_rojo": "global",
         "respuesta_azul": "extern"
+    },
+    "16": {
+        "pregunta": "Cual de estos lenguajes de programacion es de alto nivel?",
+        "respuesta_rojo": "Python",
+        "respuesta_azul": "Java"
+    },
+    "17": {
+        "pregunta": "Cual es una herramienta para el control de versiones?",
+        "respuesta_rojo": "Git",
+        "respuesta_azul": "Mercurial"
+    },
+    "18": {
+        "pregunta": "Que metodo de cadenas elimina espacios al inicio y al final?",
+        "respuesta_rojo": "strip()",
+        "respuesta_azul": "rstrip()"
+    },
+    "19": {
+        "pregunta": "Que operador se utiliza para la concatenacion de cadenas?",
+        "respuesta_rojo": "+",
+        "respuesta_azul": "join()"
+    },
+    "20": {
+        "pregunta": "Que libreria de Python se usa para el aprendizaje automatico?",
+        "respuesta_rojo": "scikit-learn",
+        "respuesta_azul": "TensorFlow"
+    },
+    "21": {
+        "pregunta": "Cual de estas estructuras de datos es un grafo?",
+        "respuesta_rojo": "Red social",
+        "respuesta_azul": "Mapa de carreteras"
+    },
+    "22": {
+        "pregunta": "Que metodo se usa para copiar una lista en Python?",
+        "respuesta_rojo": "copy()",
+        "respuesta_azul": "[:] (slicing)"
+    },
+    "23": {
+        "pregunta": "Cual es un sistema operativo basado en Unix?",
+        "respuesta_rojo": "Linux",
+        "respuesta_azul": "macOS"
+    },
+    "24": {
+        "pregunta": "Cual de estos tipos de datos es mutable?",
+        "respuesta_rojo": "Lista",
+        "respuesta_azul": "Diccionario"
+    },
+    "25": {
+        "pregunta": "Cual es un editor de texto popular para programadores?",
+        "respuesta_rojo": "VS Code",
+        "respuesta_azul": "Sublime Text"
+    },
+    "26": {
+        "pregunta": "Que estructura de datos se usa para almacenar elementos unicos?",
+        "respuesta_rojo": "Set",
+        "respuesta_azul": "Frozenset"
+    },
+    "27": {
+        "pregunta": "Que libreria de Python se usa para crear graficos?",
+        "respuesta_rojo": "Matplotlib",
+        "respuesta_azul": "Seaborn"
+    },
+    "28": {
+        "pregunta": "Cual es un protocolo para transferir datos en la web?",
+        "respuesta_rojo": "HTTP",
+        "respuesta_azul": "HTTPS"
+    },
+    "29": {
+        "pregunta": "Que funcion de Python convierte una cadena a entero?",
+        "respuesta_rojo": "int()",
+        "respuesta_azul": "eval()"
+    },
+    "30": {
+        "pregunta": "Cual de estos sistemas de bases de datos es relacional?",
+        "respuesta_rojo": "MySQL",
+        "respuesta_azul": "PostgreSQL"
     }
 }

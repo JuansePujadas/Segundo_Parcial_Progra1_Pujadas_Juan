@@ -27,7 +27,6 @@ class FormMainMenu(Form):
         ]
 
     def click_start(self, form_a_inicializar):
-        #self.start_level = True
         self.set_active(form_a_inicializar)
 
     def click_ranking(self, form_a_inicializar):

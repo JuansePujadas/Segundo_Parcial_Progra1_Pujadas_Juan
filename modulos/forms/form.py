@@ -18,6 +18,9 @@ class Form:
         for aux_form in self.forms_dict.values():
             aux_form.active = False
         self.forms_dict[name].active = True
+
+        if name == 'form_ranking':
+            self.forms_dict[name].cargar_ranking()
         
         if name in ['form_game', 'form_enter_name', 'form_main_menu']:
             self.forms_dict[name].music_update()

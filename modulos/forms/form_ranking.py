@@ -2,6 +2,7 @@ import pygame
 from .form import Form
 from ..widgets import (Button, TextTitle)
 from ..variables import (DIMENSION_PANTALLA, RUTA_FONDO_RANKING)
+from ..auxiliar import cargar_ranking
 
 class FormRanking(Form):
 
@@ -27,7 +28,12 @@ class FormRanking(Form):
             self.ranking_title, self.ranking_subtitle, self.button_return_menu
         ]
 
+    def cargar_ranking(self):
+        self.ranking_list = cargar_ranking()
+        self.init_ranking()
+
     def init_ranking(self):
+        self.ranking_on_screen.clear()
         for i in range(len(self.ranking_list)):
             self.ranking_on_screen.append(
                 TextTitle(x=DIMENSION_PANTALLA[0]//2-100, y=DIMENSION_PANTALLA[1]//2+i*25, texto=f'{i+1}', pantalla=self.pantalla)
