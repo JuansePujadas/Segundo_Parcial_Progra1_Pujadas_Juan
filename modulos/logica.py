@@ -12,16 +12,16 @@ class Logic():
         self.votaciones_realizadas = []
 
     def seleccionar_pregunta(self):
-        self.pregunta_actual = random.choice(list(self.preguntas.values()))  # Seleccionar una pregunta aleatoria
+        self.pregunta_actual = random.choice(list(self.preguntas.values()))             # Seleccionar una pregunta aleatoria
         
         return self.pregunta_actual
     
     def realizar_votaciones(self):
         respuestas = [self.pregunta_actual['respuesta_rojo'], self.pregunta_actual['respuesta_azul']]
         
-        votos = [random.choice(respuestas) for _ in range(5)]               # Simula 5 votaciones automáticas 
-        self.votaciones_realizadas = votos                                  # Almacenar las votaciones
-        respuesta_correcta = max(set(votos), key=votos.count)               # Devuelve la mayoría
+        votos = [random.choice(respuestas) for _ in range(5)]                          # Simula 5 votaciones automáticas 
+        self.votaciones_realizadas = votos                                             # Almacenar las votaciones
+        respuesta_correcta = max(set(votos), key=votos.count)                          # Devuelve la mayoría
         return respuesta_correcta 
         
     def finalizar_partida(self, puntaje):

@@ -34,7 +34,7 @@ class FormGame(Form):
         self.pregunta_actualizada = False
         self.actualizar_pregunta()
 
-    def reiniciar_puntaje(self):  # Método para reiniciar el puntaje al comienzo de la partida
+    def reiniciar_puntaje(self):                                # Método para reiniciar el puntaje al comienzo de la partida
         self.score = 0
         self.game_title_puntaje.texto = f'{self.score}'
 
@@ -100,23 +100,20 @@ class FormGame(Form):
             widget.draw()
 
     def update(self):
-        # Mostrar los colores por 3 segundos
+        
         if self.mostrar_colores_tiempo is not None:
-            if pygame.time.get_ticks() - self.mostrar_colores_tiempo < 3000:
-                # Mientras han pasado menos de 3 segundos, seguir mostrando los colores
+            if pygame.time.get_ticks() - self.mostrar_colores_tiempo < 3000:        # Mostrar los colores por 3 segundos
                 self.draw()
-                return  # No continuar con la actualización, esperar 3 segundos
+                return
             else:
-                # Después de 3 segundos, actualizar la pregunta o finalizar la partida
-                self.mostrar_colores_tiempo = None  # Resetear el temporizador
+                self.mostrar_colores_tiempo = None                                  # Resetear el temporizador
                 if not self.pregunta_actualizada:
-                    self.actualizar_pregunta()  # Ahora actualizamos la pregunta
-                    self.pregunta_actualizada = True  # Evitar actualización inmediata
+                    self.actualizar_pregunta()                                      # Ahora actualizamos la pregunta
+                    self.pregunta_actualizada = True                                # Evitar actualización inmediata
 
                 for widget in self.widget_list:
-                    widget.update()  # Continuar con la actualización normal de widgets
+                    widget.update()
 
-                # Ahora se puede proceder a actualizar la pregunta o finalizar la partida
                 if self.logic.realizar_votaciones():
                     self.actualizar_pregunta()
                 else:

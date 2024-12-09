@@ -23,7 +23,6 @@ class Button(Widget):
         mouse_pos = pygame.mouse.get_pos()
         current_time = pygame.time.get_ticks()
 
-        # Verificar si el botón es presionado
         if self.rect.collidepoint(mouse_pos) and pygame.mouse.get_pressed()[0] == 1:    # Comprobar si ha pasado suficiente tiempo desde el último clic
             if current_time - self.last_click_time > self.cooldown_time:
                 self.last_click_time = current_time                                     # Actualizar el tiempo del último clic

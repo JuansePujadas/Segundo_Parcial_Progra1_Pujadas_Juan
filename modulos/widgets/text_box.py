@@ -12,8 +12,6 @@ class TextBox(Widget):
         self.rect = self.image.get_rect()
         self.rect.center = (x, y)
 
-        #self.click_option_sfx = pygame.mixer.Sound('Proyecto_PyGame/assets/snd/ding.mp3')
-
         self.on_click = on_click
         self.on_click_param = on_click_param
 

@@ -32,7 +32,7 @@ class FormEnterName(Form):
 
     def click_confirm_name(self, param: str):
         self.confirm_name = True
-        nombre = self.text_box.writing.strip()           # Obtenemos el nombre del TextBox
+        nombre = self.text_box.writing.strip()                    # Obtenemos el nombre del TextBox
         if nombre:
             logic = Logic()
             logic.acatualizar_ranking(nombre, self.score)

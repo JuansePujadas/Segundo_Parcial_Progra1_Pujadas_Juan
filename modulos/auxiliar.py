@@ -22,10 +22,10 @@ def cargar_ranking():
         lineas = ranking_file.read()
         for linea in lineas.split('\n'):
             fila = linea.split(',')
-            if len(fila) == 2 and fila[0].strip() and fila[1].strip():  # Aseguramos que haya dos elementos y no sean vacíos
+            if len(fila) == 2 and fila[0].strip() and fila[1].strip():        # Aseguramos que haya dos elementos y no sean vacíos
                 ranking.append(fila)
 
-    ranking = [fila for fila in ranking if fila]                        # Aseguramos que no haya filas vacías al final de la lista
+    ranking = [fila for fila in ranking if fila]                              # Aseguramos que no haya filas vacías al final de la lista
 
     ordenar_matriz(ranking)
     
